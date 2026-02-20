@@ -11,22 +11,43 @@ Welcome to my web site
   <h1 style="text-align: center; color: red; text-decoration: underline;">
  Web Development(lab1)
 </h1>
-   <p >
-    <span class="label">Full name:</span> Amraoui Sara
-   </p>
+ {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
 
+.fullname::before {
+    content: "Full name: ";
+    color: green;
+    font-weight: bold;
+}
 
-<p>
-    <span class="label">Age:</span> 20 years old
-</p>
+.age::before {
+    content: "Age: ";
+    color: green;
+    font-weight: bold;
+}
 
-<p >
-    <span class="label">Class:</span> 2<sup>nd</sup> LMD computer Science
-</p>
+.class::before {
+    content: "Class: ";
+    color: green;
+    font-weight: bold;
+}
 
-<p>
-    <span class="label">University:</span> University of EL OUED
-</p>
+.university::before {
+    content: "University: ";
+    color: green;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<p class="fullname">Amraoui Sara</p>
+<p class="age">20 years old</p>
+<p class="class">2<sup>nd</sup> LMD computer Science</p>
+<p class="university">University of EL OUED</p>
 
 </body>
 </html>
