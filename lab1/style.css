@@ -1,0 +1,54 @@
+body{
+font-family: Arial;
+font-size:20px;
+background-color:#f0f0f0;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+}
+
+.lab{
+text-align:center;
+color:red;
+text-decoration:underline;
+}
+
+.container{
+display:flex;
+justify-content:space-between;
+padding:40px;
+}
+
+.info{
+width:40%;
+}
+
+.image img{
+width:500px;
+}
+
+.fullname::before{
+content:"Full name: ";
+color:green;
+font-weight:bold;
+}
+
+.age::before{
+content:"Age: ";
+color:green;
+font-weight:bold;
+}
+
+.class::before{
+content:"Class: ";
+color:green;
+font-weight:bold;
+}
+
+.university::before{
+content:"University: ";
+color:green;
+font-weight:bold;
+}
