@@ -73,4 +73,15 @@ $(document).ready(function () {
                        response.message +
                   '</div>'
                 `);
-            
+                }
+                },
+                error: function (){
+                  $('#result').html(
+              '<div class="alert alert-danger">'+
+                     'Server error occurred.'+
+                    '</div>' 
+                    );
+                    }
+                    });
+                    });
+                    });
