@@ -41,8 +41,8 @@ if (isset($_POST['course'], $_POST['credits'], $_POST['grade'])) {
     if ($totalCredits > 0) {
         $gpa = $totalPoints / $totalCredits;
 
-        $message = "Your GPA is " . number_format($gpa, 2);
-
+        $message = "Your GPA is " . number_format($gpa, 2)
+            "($interpretation).";
         echo json_encode([
             "success" => true,
             "gpa" => $gpa,
@@ -52,13 +52,15 @@ if (isset($_POST['course'], $_POST['credits'], $_POST['grade'])) {
     } else {
         echo json_encode([
             "success" => false,
-            "message" => "No data"
+            "message" => "No valid courses entered.",
         ]);
     }
 
 } else {
     echo json_encode([
         "success" => false,
-        "message" => "Error"
+        "message" => "Data not received."
     ]);
 }
+exit;
+?>
