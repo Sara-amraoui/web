@@ -1,1 +1,8 @@
+# Optional: deny direct web access to non-public internals (Apache only).
+# Remove or adjust if it breaks your environment.
 
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(bootstrap\.php|composer\.(json|lock))$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
